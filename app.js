@@ -22,6 +22,9 @@ async function chartIt() {
             scales: {
                 yAxes: [{
                     ticks: {
+                        callback: function (value, index, values) {
+                            return value + '°';
+                        },
                         beginAtZero: false
                     }
                 }]
